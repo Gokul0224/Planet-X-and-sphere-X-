@@ -1,0 +1,269 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050817;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #080d20;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #54d5ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #54d5ff;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+
+    background:
+    linear-gradient(
+        rgba(2, 5, 20, 0.65),
+        rgba(2, 5, 20, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564")
+    center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.tag {
+    color: #54d5ff;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 65px);
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #54d5ff;
+}
+
+.description {
+    font-size: 18px;
+    color: #d0d8e8;
+    line-height: 1.8;
+}
+
+.primary-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background: #38bdf8;
+    color: #06101c;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* COMMON SECTIONS */
+
+.section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #54d5ff;
+}
+
+.about p:not(.tag) {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.9;
+    color: #c5cede;
+}
+
+/* CARDS */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #101a32;
+    border: 1px solid #263c5e;
+    border-radius: 18px;
+    padding: 35px 25px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #54d5ff;
+    box-shadow: 0 10px 30px #123c6040;
+}
+
+.card-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #54d5ff;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.card p {
+    color: #c5cede;
+    line-height: 1.7;
+}
+
+.card button {
+    margin-top: 25px;
+    background: #38bdf8;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card button:hover {
+    background: white;
+}
+
+/* INFORMATION BOX */
+
+.info-box {
+    margin: 35px auto 0;
+    max-width: 750px;
+    padding: 25px;
+    background: #101a32;
+    border: 1px solid #263c5e;
+    border-radius: 12px;
+    color: #d0d8e8;
+    line-height: 1.7;
+}
+
+/* CTA */
+
+.cta {
+    background: #0b1530;
+}
+
+.cta p {
+    color: #c5cede;
+    line-height: 1.8;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background: #080d20;
+    padding: 30px 15px;
+    color: #aebbd0;
+    line-height: 2;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 10px;
+    }
+
+    .nav-links {
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
