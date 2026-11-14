@@ -157,6 +157,27 @@
                 font-size: 36px;
             }
         }
+        .card p {
+    /* உன்னுடைய existing styles */
+}
+
+/* இதற்குக் கீழே paste பண்ணு */
+
+.card {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(53,185,238,0.2);
+}
+
+.card .btn {
+    margin-top: 20px;
+    padding: 12px 22px;
+    font-size: 14px;
+}
     </style>
 </head>
 
@@ -180,12 +201,20 @@
             Explore the mysteries of Planet X and discover
             the universe through NASA's SPHEREx infrared
             space observations.
-        </p>
+       <h3>🛰️ SPHEREx Mission</h3>
 
-        <a href="#explore" class="btn">
-            Start Exploring →
-        </a>
+<p>
+    NASA's SPHEREx space telescope studies the
+    universe using infrared light. It helps
+    scientists understand galaxies, stars,
+    cosmic dust and the history of the universe.
+</p>
 
+<a href="https://science.nasa.gov/mission/spherex/"
+   target="_blank"
+   class="btn">
+   Explore SPHEREx →
+</a>   
     </section>
 
     <section class="about" id="about">
@@ -204,29 +233,56 @@
 
     <section class="cards" id="explore">
 
-        <div class="card">
-            <h3>🌌 Planet X</h3>
-            <p>
-                Explore the scientific hypothesis of a possible
-                distant planet in our solar system.
-            </p>
-        </div>
+    <!-- Planet X Card -->
+    <div class="card">
+        <h3>🌌 Planet X</h3>
 
-        <div class="card">
-            <h3>🛰️ SPHEREx</h3>
-            <p>
-                Explore infrared observations and learn
-                about galaxies and cosmic objects.
-            </p>
-        </div>
+        <p>
+            Explore the scientific hypothesis of a possible
+            distant planet in our solar system and discover
+            the mysteries of outer space.
+        </p>
 
-        <div class="card">
-            <h3>⭐ Star Data</h3>
-            <p>
-                Discover astronomical objects using
-                Gaia mission datasets.
-            </p>
-        </div>
+        <a href="https://science.nasa.gov/solar-system/"
+           target="_blank"
+           class="btn">
+            Learn More →
+        </a>
+    </div>
+
+    <!-- SPHEREx Card -->
+    <div class="card">
+        <h3>🛰️ SPHEREx</h3>
+
+        <p>
+            Explore infrared observations and learn about
+            galaxies, cosmic dust, stars and the history
+            of the universe.
+        </p>
+
+        <a href="https://science.nasa.gov/mission/spherex/"
+           target="_blank"
+           class="btn">
+            Explore SPHEREx →
+        </a>
+    </div>
+
+    <!-- Star Data Card -->
+    <div class="card">
+        <h3>⭐ Star Data</h3>
+
+        <p>
+            Discover billions of stars and explore
+            astronomical information collected by
+            the European Space Agency's Gaia mission.
+        </p>
+
+        <a href="https://www.esa.int/Science_Exploration/Space_Science/Gaia"
+           target="_blank"
+           class="btn">
+            Explore Stars →
+        </a>
+    </div>
 
     </section>
 
