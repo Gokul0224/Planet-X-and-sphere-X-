@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet X | Space Explorer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #050817;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #080d20;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #72d9ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #72d9ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 20px;
+
+            background:
+            linear-gradient(rgba(3,7,20,.65),
+            rgba(3,7,20,.8)),
+            url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564')
+            center/cover;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #69d9ff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 650px;
+            line-height: 1.7;
+            color: #d5d9e8;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 30px;
+            background: #35b9ee;
+            color: #06101c;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* About Section */
+        .about {
+            padding: 65px 10%;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #69d9ff;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            color: #c5c9d6;
+            line-height: 1.8;
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 30px 8% 70px;
+        }
+
+        .card {
+            background: #111a32;
+            padding: 30px;
+            border: 1px solid #263653;
+            border-radius: 15px;
+            width: 280px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #69d9ff;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #c5c9d6;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #080d20;
+            color: #aab4c8;
+        }
+
+        @media(max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">🚀 SPACE EXPLORER</div>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#explore">Explore</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+
+        <h1>Discover the <span>Unknown Universe</span></h1>
+
+        <p>
+            Explore the mysteries of Planet X and discover
+            the universe through NASA's SPHEREx infrared
+            space observations.
+        </p>
+
+        <a href="#explore" class="btn">
+            Start Exploring →
+        </a>
+
+    </section>
+
+    <section class="about" id="about">
+
+        <h2>About Our Mission</h2>
+
+        <p>
+            Our project explores the mysteries of the universe
+            using astronomical datasets from NASA and other
+            space science resources. Discover stars, galaxies
+            and infrared observations through interactive
+            visualizations.
+        </p>
+
+    </section>
+
+    <section class="cards" id="explore">
+
+        <div class="card">
+            <h3>🌌 Planet X</h3>
+            <p>
+                Explore the scientific hypothesis of a possible
+                distant planet in our solar system.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🛰️ SPHEREx</h3>
+            <p>
+                Explore infrared observations and learn
+                about galaxies and cosmic objects.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>⭐ Star Data</h3>
+            <p>
+                Discover astronomical objects using
+                Gaia mission datasets.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Planet X & SPHEREx Explorer | NASA Space Apps Project</p>
+    </footer>
+
+</body>
+</html>
